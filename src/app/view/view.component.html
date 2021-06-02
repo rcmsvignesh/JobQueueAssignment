@@ -1,0 +1,26 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col border font-weight-bold">Name</div>
+        <div class="col border">{{job.name}}</div>
+    </div>
+    <div class="row">
+        <div class="col border font-weight-bold">Description</div>
+        <div class="col border">{{job.description}}</div>
+    </div>
+    <div class="row">
+        <div class="col border font-weight-bold">Status</div>
+        <div class="col border">{{job.status}}</div>
+    </div>
+    <div class="row">
+        <div class="col border font-weight-bold">Priority</div>
+        <div class="col border">{{job.priority}}</div>
+    </div>
+    <div class="row">
+        <div class="col border">
+            <a href="#" [routerLink]="['/update', job.id]">Update</a>
+        </div>
+        <div class="col border">
+            <a href="#" (click)="deleteJob()">Delete</a>
+        </div>
+    </div>
+</div>

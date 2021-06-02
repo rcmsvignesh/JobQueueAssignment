@@ -1,0 +1,12 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col border font-weight-bold">Job Name</div>
+        <div class="col border font-weight-bold">Status</div>
+        <div class="col border font-weight-bold">Priority</div>
+    </div>
+    <div *ngFor="let j of jobs" class="row">
+        <div class="col border"><a href="#" [routerLink]="['/view', j.id]">{{j.name}}</a></div>
+        <div class="col border">{{j.status}}</div>
+        <div class="col border">{{j.priority}}</div>
+    </div>
+</div>
